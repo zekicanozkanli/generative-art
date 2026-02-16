@@ -7,3 +7,5 @@
 - [d_inoutward_star.js](elements/d_inoutward_star.js)
 - [yin_and_yang.gif](yin_and_yang/yin_and_yang.js)
 - [e_into_clouds.js](elements/e_into_clouds.js)
+
+![yin and yang](yin_and_yang/yin_and_yang.gif)
