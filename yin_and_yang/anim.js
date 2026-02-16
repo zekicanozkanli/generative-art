@@ -23,12 +23,12 @@ function draw() {
     /* number of points */
     for (let i = 10000; i > 0; i--) {
 
-        let y = i / 1000;
+        let j = i / 1000;
 
-        let e = y / 13 - 13;
+        let e = j / 13 - 13;
 
         /* xor discretizes the tail, unlike the continuity of head */
-        let s = (y < 8) ? (8 + sin(Math.floor(y) ^ 9) * 6) : (3 + tan(y));
+        let s = (j < 8) ? (8 + sin(Math.floor(j) ^ 9) * 6) : (3 + tan(j));
 
         /* removing cos(.) removes the point cloud */
         let k = s * cos(i + t / 4);
