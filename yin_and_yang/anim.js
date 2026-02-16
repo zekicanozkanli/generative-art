@@ -35,7 +35,7 @@ function draw() {
 
         let d = mag(k, e) + cos(e + t * 2 + (i % 2) * 4);
 
-        let r = y * k / 5 * (2 + sin(d * 2 + y - t * 4)) + 80;
+        let r = j * k / 5 * (2 + sin(d * 2 + j - t * 4)) + 80;
 
         let theta = d / 4 - t / 2 + (i % 2) * 3;
         point(r * cos(theta) + 400, r * sin(theta) + 200);
