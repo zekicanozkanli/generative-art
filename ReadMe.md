@@ -34,6 +34,14 @@ $$
 p = (r cos(\theta) + 400, r sin(\theta) + 200), 
 $$
 
-where $r = \frac{y \kappa}{5} \left( 2 + \sin(2\delta + y - 4t) \right) + 80$ and $\theta = \frac{\delta}{4} - \frac{t}{2} + 3 \cdot (i \text{ mod } 2).$
+where
+$$
+\begin{align*}
+r &= \frac{y \kappa}{5} \left( 2 + \sin(2\delta + y - 4t) \right) + 80 \\
+\theta &= \frac{\delta}{4} - \frac{t}{2} + 3 \cdot (i \text{ mod } 2).
+\end{align*}
+$$
+
+
 
 ![yin and yang](yin_and_yang/yin_and_yang.gif)
