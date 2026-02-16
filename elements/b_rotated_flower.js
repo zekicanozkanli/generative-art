@@ -14,7 +14,7 @@ function draw() {
 
     t += 0.02;
 
-    for (let i = 0; i < TWO_PI; i += 0.01) {
+    for (let i = 0; i < 3; i += 0.01) {
 
         let m = 1; n = 7;
 
@@ -25,7 +25,7 @@ function draw() {
         point(x, y);
 
         let rho = 100;
-        let theta = t;
+        let theta = i;
 
         point(rho * cos(theta), rho * sin(theta));
     }
