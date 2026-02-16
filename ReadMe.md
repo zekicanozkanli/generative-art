@@ -25,7 +25,7 @@ The motion is driven by an auxiliary oscillator $\kappa(\cdot)$ and a distance m
 
 $$\kappa = \Sigma(y) \cdot \cos(i + \frac{t}{4}) \quad \text{ and } \quad \delta = \sqrt{\kappa^2 + \varepsilon^2} + \cos(\varepsilon + 2t + 4 \cdot (i \text{ mod } 2)),$$
 
-where $i$ is the index of the point, $t$ the time, and $\varepsilon$ is a normalized vertical shift.
+where $i$ is the index of the point, $t$ the time, and $\varepsilon$ the normalized vertical shift.
 
 ### iii. Polar Projection
 Finally, the Cartesian screen coordinates $(x, y)$ are derived by converting the modulated polar coordinates $(r, \theta)$ back to Cartesian space:
