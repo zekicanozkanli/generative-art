@@ -21,9 +21,9 @@ $$
 where $y$ is the !!!  $\oplus$ denotes the bitwise XOR operation.
 
 ### ii. Dynamics
-The motion is driven by an auxiliary oscillator $\kappa(.)$ and a distance metric $\delta(\cdot)$ defined by:
+The motion is driven by an auxiliary oscillator $\kappa(\cdot)$ and a distance metric $\delta(\cdot)$ defined by
 
-$$\kappa = \Sigma(y) \cdot \cos(i + t/4) \quad \text{ and } \quad \delta = \sqrt{\kappa^2 + \varepsilon^2} + \cos(\varepsilon + 2t + 4(i \% 2)),$$
+$$\kappa = \Sigma(y) \cdot \cos(i + \frac{t}{4}) \quad \text{ and } \quad \delta = \sqrt{\kappa^2 + \varepsilon^2} + \cos(\varepsilon + 2t + 4(i mod 2)),$$
 
 where $i$ is the index of the point, $t$ the time, and $\varepsilon$ is a normalized vertical shift.
 
