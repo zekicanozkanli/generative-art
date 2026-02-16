@@ -25,7 +25,7 @@ function draw() {
 
         let j = i / 1000;
 
-        let e = j;
+        let e = j / 13 - 13;
 
         /* xor discretizes the tail, unlike the continuity of head */
         let s = (j < 8) ? (8 + sin(Math.floor(j) ^ 9) * 6) : (3 + tan(j));
