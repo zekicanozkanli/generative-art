@@ -38,7 +38,7 @@ where
 
 $$
 \begin{align*}
-r &= \frac{y \kappa}{5} \left( 2 + \sin(2\delta + y - 4t) \right) + 80 \\
+r &= \frac{j \kappa}{5} \left( 2 + \sin(j + 2\delta - 4t) \right) + 80 \\
 \theta &= \frac{\delta}{4} - \frac{t}{2} + 3 \cdot (i \text{ mod } 2).
 \end{align*}
 $$
