@@ -21,9 +21,6 @@ $$
 - Distortion Field ($\delta$):
     $$\delta = \sqrt{\kappa^2 + \epsilon^2} + \cos(\epsilon + 2t + 4(i \bmod 2))$$
 
-### 4. Polar Coordinates
-The final positions are calculated by converting derived polar coordinates $(\rho, \theta)$ into Cartesian space.
-
 - Radius ($\rho$):
     $$\rho = \frac{y \cdot \kappa}{5} \left( 2 + \sin(2\delta + y - 4t) \right) + 80$$
 
