@@ -18,14 +18,14 @@ $$
 \end{cases}
 $$
 
-where $j$ is a parameter obtained from $i$ and$  $\oplus$ denotes the bitwise XOR operation.
+where $j$ is a parameter obtained from $i$ and  $\oplus$ denotes the bitwise XOR operation.
 
 ### ii. Dynamics
 The motion is driven by an auxiliary oscillator $\kappa$ and a distance metric $\delta$ defined by
 
-$$\kappa(\cdot) = \Sigma(y) \cdot \cos(i + \frac{t}{4}) \quad \text{ and } \quad \delta(\cdot) = \sqrt{\kappa^2 + \varepsilon^2} + \cos(\varepsilon + 2t + 4 \cdot (i \text{ mod } 2)),$$
+$$\kappa(\cdot) = \Sigma(j) \cdot \cos(i + \frac{t}{4}) \quad \text{ and } \quad \delta(\cdot) = \sqrt{\kappa^2 + \varepsilon^2} + \cos(\varepsilon + 2t + 4 \cdot (i \text{ mod } 2)),$$
 
-where $i$ is the index of the point, $t$ the time, and $\varepsilon$ the normalized vertical shift.
+where $i$ is the index of the point, $t$ the time, and $\varepsilon$ the radial shift from the center of motion.
 
 ### iii. Position Vector
 Finally, the position vector $p$ is defined as
