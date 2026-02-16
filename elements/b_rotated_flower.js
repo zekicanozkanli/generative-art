@@ -14,7 +14,7 @@ function draw() {
 
     t += 0.02;
 
-    for (let i = 0; i < 3; i += 0.01) {
+    for (let i = 0; i < TWO_PI; i += 0.01) {
 
         let m = 1; n = 7;
 
