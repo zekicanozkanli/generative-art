@@ -23,7 +23,10 @@ function draw() {
         let x = r * cos(i);
         let y = r * sin(i);
 
-        point(cos(i), sin(i));
+        let r = 100;
+        let theta = i + t;
+
+        point(r * cos(theta), r * sin(theta));
     }
 
 }
