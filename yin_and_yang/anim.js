@@ -4,12 +4,12 @@ function setup() {
     background(9);
     stroke(200, 100);
 
-    saveGif("yin_and_yang.gif", 12, {
+    /*saveGif("yin_and_yang.gif", 12, {
         units: "seconds",
         delay: 0,
         render: true,
         quality: "high"
-    });
+    });*/
 
 }
 
@@ -28,10 +28,10 @@ function draw() {
         let e = y / 13 - 13;
 
         /* xor discretizes the tail, unlike the continuity of head */
-        let term = (y < 8) ? (8 + sin(Math.floor(y) ^ 9) * 6) : (3 + tan(y));
+        let s = (y < 8) ? (8 + sin(Math.floor(y) ^ 9) * 6) : (3 + tan(y));
 
         /* removing cos(.) removes the point cloud */
-        let k = term * cos(i + t / 4);
+        let k = s * cos(i + t / 4);
 
         let d = mag(k, e) + cos(e + t * 2 + (i % 2) * 4);
 
