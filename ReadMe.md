@@ -7,23 +7,23 @@ Here are some generative art pieces I made using p5.js
 
 
 
-### i. Shape Function ($\tau(\cdot)$)
-The distinction between the fish's smooth head and chaotic tail is defined by a piecewise function \tau(y):
+### i. Shape Function
+The distinction between the fish's smooth head and chaotic tail is defined by a piecewise function $\Sigma(y)$:
 
 $$
-\tau(y) = 
+\Sigma(y) = 
 \begin{cases} 
-8 + 6 \sin(\lfloor y \rfloor \oplus 9) & \text{if } y < 8 \quad (\text{Head: discretized chaos}) \\
-3 + \tan(y) & \text{if } y \ge 8 \quad (\text{Tail: continuous curve,})
+8 + 6 \sin(\lfloor y \rfloor \oplus 9) & \text{if } y < 8 \\
+3 + \tan(y) & \text{if } y \ge 8,
 \end{cases}
 $$
 
 where $\oplus$ denotes the bitwise XOR operation.
 
-### ii. Dynamics ($\kappa(\cdot)$, $\delta(\cdot)$)
-The motion is driven by an auxiliary oscillator $\kappa$ and a distance metric $\delta$ defined by:
+### ii. Dynamics
+The motion is driven by an auxiliary oscillator $\kappa(\cdot)$ and a distance metric $\delta(\cdot)$ defined by:
 
-$$\kappa = \tau(y) \cdot \cos(i + t/4) \text{ and } \delta = \sqrt{\kappa^2 + \epsilon^2} + \cos(\epsilon + 2t + 4p),$$
+$$\kappa = \Sigma(y) \cdot \cos(i + t/4) \quad \text{ and } \quad \delta = \sqrt{\kappa^2 + \epsilon^2} + \cos(\epsilon + 2t + 4p),$$
 
 where $\epsilon$ is a normalized vertical shift.
 
