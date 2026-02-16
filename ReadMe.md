@@ -27,18 +27,13 @@ $$\kappa = \Sigma(y) \cdot \cos(i + \frac{t}{4}) \quad \text{ and } \quad \delta
 
 where $i$ is the index of the point, $t$ the time, and $\varepsilon$ the normalized vertical shift.
 
-### iii. Polar Projection
-Finally, the Cartesian screen coordinates $(x, y)$ are derived by converting the modulated polar coordinates $(r, \theta)$ back to Cartesian space:
+### iii. Position Vector
+Finally, the position vector $p$ is defined as
 
 $$
-\begin{align*}
-r &= \frac{y \kappa}{5} \left( 2 + \sin(2\delta + y - 4t) \right) + R_{base} \\
-\theta &= \frac{\delta}{4} - \frac{t}{2} + 3p
-\end{align*}
+p = (r cos(\theta) + 400, r sin(\theta) + 200), 
 $$
 
-$$
-\begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} r \cos(\theta) + C_x \\ r \sin(\theta) + 9\delta + C_y \end{bmatrix}
-$$
+where $r = \frac{y \kappa}{5} \left( 2 + \sin(2\delta + y - 4t) \right) + 80$ and $\theta = \frac{\delta}{4} - \frac{t}{2} + 3 \cdot (i \text{ mod } 2).$
 
 ![yin and yang](yin_and_yang/yin_and_yang.gif)
