@@ -11,6 +11,5 @@ git pull --rebase origin main
 if ! git diff-index --quiet HEAD; then
     git commit -m "Auto-Sync: last update: $(date '+%b %d, %H:%M')"
     git push origin main
-    # Success notification
     osascript -e 'display notification "generative-art synced to GitHub" with title "Git Auto" subtitle "Success"'
 fi
