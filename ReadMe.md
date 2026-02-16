@@ -8,7 +8,7 @@ Here are some generative art pieces I made using p5.js
 
 
 ### i. Shape Function
-The distinction between the fish's smooth head and chaotic tail is defined by a piecewise function $\Sigma(y)$:
+The distinction between the fish's smooth head and chaotic tail is defined by the piecewise function
 
 $$
 \Sigma(y) = 
@@ -18,19 +18,17 @@ $$
 \end{cases}
 $$
 
-where $\oplus$ denotes the bitwise XOR operation.
+where $y$ is the !!!  $\oplus$ denotes the bitwise XOR operation.
 
 ### ii. Dynamics
 The motion is driven by an auxiliary oscillator $\kappa(\cdot)$ and a distance metric $\delta(\cdot)$ defined by:
 
-$$\kappa = \Sigma(y) \cdot \cos(i + t/4) \quad \text{ and } \quad \delta = \sqrt{\kappa^2 + \epsilon^2} + \cos(\epsilon + 2t + 4p),$$
+$$\kappa = \Sigma(y) \cdot \cos(i + t/4) \quad \text{ and } \quad \delta = \sqrt{\kappa^2 + \varepsilon^2} + \cos(\varepsilon + 2t + 4(i \% 2)),$$
 
-where $\epsilon$ is a normalized vertical shift.
+where $i$ is the index of the point, $t$ the time, and $\varepsilon$ is a normalized vertical shift.
 
 ### iii. Polar Projection
 Finally, the Cartesian screen coordinates $(x, y)$ are derived by converting the modulated polar coordinates $(r, \theta)$ back to Cartesian space:
-
-$$ () $$
 
 $$
 \begin{align*}
